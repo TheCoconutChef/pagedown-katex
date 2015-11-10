@@ -1,34 +1,35 @@
 {
-  "name": "pagedown-katex",
-  "description": "Pagedown text editor with katex rendering",
-  "main": "pagedownKatex.js",
-  "authors": [
+    "name": "pagedown-katex",
+    "version": "0.0.1",
+    "description": "Pagedown text editor with katex rendering",
+    "main": "dist/pagedownKatex.min.js",
+    "authors": [
     "TheCoconutChef"
   ],
-  "license": "MIT",
-  "keywords": [
+    "license": "MIT",
+    "keywords": [
     "wysiwyg",
     "latex",
     "katex",
     "text-editor",
     "pagedown"
   ],
-  "moduleType": [
+    "moduleType": [
     "globals"
   ],
-  "homepage": "",
-  "private": true,
-  "ignore": [
+    "homepage": "",
+    "private": true,
+    "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
   ],
-  "dependencies": {
-    "angular": "~1.4.7",
-    "pagedown": "~1.1.0",
-    "KaTeX": "katex#~0.5.1",
-    "jquery": "~2.1.4"
-  }
+    "dependencies": {
+        "angular": "~1.4.7",
+        "pagedown": "~1.1.0",
+        "KaTeX": "katex#~0.5.1",
+        "jquery": "~2.1.4"
+    }
 }
