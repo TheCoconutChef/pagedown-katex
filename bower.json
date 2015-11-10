@@ -2,7 +2,10 @@
     "name": "pagedown-katex",
     "version": "0.0.1",
     "description": "Pagedown text editor with katex rendering",
-    "main": "dist/pagedownKatex.min.js",
+    "main": [
+        "dist/pagedownKatex.min.css",
+        "dist/pagedownKatex.min.js"
+    ],
     "authors": [
     "TheCoconutChef"
   ],
