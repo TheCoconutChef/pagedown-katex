@@ -29,7 +29,7 @@ module.exports = function (grunt) {
                 separator: ';'
             },
             dist: {
-                src: ['app/module.js', 'app/katexHtmlRenderer.js', 'app/pagedownKatex.js'],
+                src: ['src/module.js', 'src/katexHtmlRenderer.js', 'src/pagedownKatex.js'],
                 dest: 'tmp/pagedownKatex.js'
             }
         },
@@ -50,6 +50,14 @@ module.exports = function (grunt) {
                 }
             }
         },
+        copy: {
+            button: {
+                expand: true,
+                cwd: 'bower_components/pagedown/',
+                src: 'wmd-buttons.png',
+                dest: 'pagedown/'
+            }
+        },
         clean: {
             dist: {
                 src: ['dist']
@@ -65,6 +73,7 @@ module.exports = function (grunt) {
         'concat',
         'uglify',
         'cssmin',
+        'copy',
         'clean:temp',
     ]);
 
@@ -73,6 +82,7 @@ module.exports = function (grunt) {
         'concat',
         'uglify',
         'cssmin',
+        'copy',
         'clean:temp',
         'karma'
     ]);
