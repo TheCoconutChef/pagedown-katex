@@ -28,7 +28,7 @@
     "dependencies": {
         "angular": "~1.4.7",
         "pagedown": "~1.1.0",
-        "KaTeX": "katex#~0.5.1",
+        "katex": "~0.5.1",
         "jquery": "~2.1.4"
     }
 }
