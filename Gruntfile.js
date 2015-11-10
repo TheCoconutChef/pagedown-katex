@@ -43,6 +43,13 @@ module.exports = function (grunt) {
                 }
             }
         },
+        cssmin: {
+            target: {
+                files: {
+                    'dist/pagedownKatex.min.css': ['src/*.css']
+                }
+            }
+        },
         clean: {
             dist: {
                 src: ['dist']
@@ -57,6 +64,7 @@ module.exports = function (grunt) {
         'clean:dist',
         'concat',
         'uglify',
+        'cssmin',
         'clean:temp',
     ]);
 
@@ -64,6 +72,7 @@ module.exports = function (grunt) {
         'clean:dist',
         'concat',
         'uglify',
+        'cssmin',
         'clean:temp',
         'karma'
     ]);
